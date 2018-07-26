@@ -1,0 +1,21 @@
+{
+  "name": "kahoot-clone",
+  "version": "1.0.0",
+  "description": "A simple kahoot game for learning purposes :)",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Udeji Francis",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^3.6.1",
+    "express": "^4.16.3",
+    "socket.io": "^2.1.1"
+  }
+}
