@@ -10,7 +10,8 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem
+  DropdownItem,
+  Container
 } from 'reactstrap';
 
 class MyNavbar extends Component {
@@ -31,7 +32,7 @@ class MyNavbar extends Component {
     return (
       <div>
         <Navbar color="dark" dark expand="md">
-          <div className="container">
+          <Container>
           <NavbarBrand href="/">GingerHead</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
@@ -61,7 +62,7 @@ class MyNavbar extends Component {
               </UncontrolledDropdown>
             </Nav>
           </Collapse>
-        </div>
+        </Container>
         </Navbar>
       </div>
     );
