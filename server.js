@@ -15,5 +15,5 @@ app.get('/', (req, res) => {
 // listen on port
 app.listen(PORT, err => {
   if(err) throw err;
-  console.log(`Kahoot Clone server listening on http://localhost:${PORT}`);
+  console.log(`Kahoot Clone - server  listening on http://localhost:${PORT}`);
 })

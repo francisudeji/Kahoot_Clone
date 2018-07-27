@@ -19,7 +19,9 @@ class App extends Component {
       <div className="App">
         <Router>
           <Switch>
-            <Route exact path="/create" component={Create} />
+            <Route exact path="/create" component={Create}>
+              <Route path="/create/:sessionId" component={Join} />
+            </Route>
             <Route exact path="/join" component={Join} />
             <Main />
           </Switch>
