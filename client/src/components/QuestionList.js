@@ -19,7 +19,7 @@ class QuestionList extends Component {
         <Button
           color="primary"
           onClick={this.toggle}
-          style={{ marginBottom: "1rem", width: "100%" }}
+          style={{ marginBottom: "1rem", width: "100%", textAlign: "left" }}
         >
           Question One
         </Button>

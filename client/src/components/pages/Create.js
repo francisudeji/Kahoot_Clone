@@ -20,7 +20,7 @@ class Create extends Component {
       <div>
         <MyNavbar />
         <Container>
-          <Row>
+          <Row className="mt-5">
             <Col xs="12" md="8">
               <QuestionForm />
             </Col>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Jumbotron, Button, Container } from "reactstrap";
+import { Link } from 'react-router-dom';
 
 const Main = props => {
   return (
@@ -7,7 +8,7 @@ const Main = props => {
       <Container>
         <Jumbotron
           className="text-center"
-          style={{ backgroundColor: "transparent", color: "#fff" }}
+          style={{ color: "#444" }}
         >
           <h1 className="display-5">Welcome to GingerHead!</h1>
           <p className="lead">
@@ -23,12 +24,12 @@ const Main = props => {
             May be best <strong>GingerHead</strong> win.
           </p>
           <p className="lead">
-            <a href="/create" light className="btn btn-warning">
+            <Link to="/create" light className="btn btn-warning">
               Create
-            </a>
-            <a href="/join" className="btn btn-warning ml-7">
+            </Link>
+            <Link to="/join" className="btn btn-warning ml-7">
               Join
-            </a>
+            </Link>
           </p>
         </Jumbotron>
       </Container>

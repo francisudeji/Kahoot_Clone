@@ -31,7 +31,7 @@ class MyNavbar extends Component {
   render() {
     return (
       <div>
-        <Navbar color="dark" dark expand="md">
+        <Navbar color="dark" dark expand="md" className="fixed-top">
           <Container>
           <NavbarBrand href="/">GingerHead</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
